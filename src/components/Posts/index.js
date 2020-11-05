@@ -31,7 +31,7 @@ const Posts = ({ posts, loading, getPosts }) => {
                                 meta={`Utilisateur numéro ${post.userId}`}
                                 description={post.body}
                                 key={post.id}
-                                image='https://picsum.photos/200/100'
+                                image={`https://picsum.photos/200/100?qversion=${post.id}`}
                             />
                         ))}
                     </Card.Group>
